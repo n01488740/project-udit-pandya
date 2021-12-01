@@ -1,0 +1,268 @@
+/* #3F51B5 #5C6BC0 #EF5350 #BDBDBD*/
+@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700);
+
+body {
+  overflow-y: scroll;
+  color: #777;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+  color: #777;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+header h1 {
+  float: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  margin: 0px;
+  text-align: center;
+}
+
+header ul {
+  width: auto;
+  position: relative;
+  overflow: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 8%;
+  margin: 0px;
+  list-style-type: none;
+}
+
+header li {
+  padding: 12px 20px 12px 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: smaller;
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+header ul:hover li {
+  color: #dfdfdf;
+}
+header ul li:hover {
+  color: white;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+/* #nav:hover{
+  color: red;
+  background-color:green
+}
+.element:hover {
+  background-color: red;
+} */
+
+#image_area {
+  padding-right: 60px;
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+* Section 1, banner
+*/
+
+#banner_area {
+  width: 100%;
+}
+
+/*
+* Section 2, about
+*/
+#about_area {
+  z-index: 1;
+  background: #fff;
+  width: 100%;
+}
+
+#section_3 {
+  z-index: 1;
+  background: #fff;
+  width: 100%;
+  /* height: 100; */
+  padding-top: 130px;
+  background: linear-gradient(to right, #3f51b5 0%, #5c6bc0 100%);
+  /* height: 100vh; */
+}
+
+#bullet {
+  background-color: #efefef;
+  padding: 4px 12px 4px 12px;
+  border-radius: 10px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.bullet_container {
+  /* margin-top: 15px; */
+  padding: 5px;
+}
+
+#button_default {
+  background-color: #ef5350; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center;
+  display: flex;
+  flex: 50%;
+  display: block;
+  text-align: center; */
+}
+
+footer a {
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+hr.solid {
+  border-top: 1 px solid #bbb;
+  width: 80%;
+}
+
+/* Laptop */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  header h1 {
+    padding: 12px 20px 12px 80px;
+  }
+
+  #banner_area {
+    background: linear-gradient(to right, #3f51b5 0%, #5c6bc0 100%);
+    margin-bottom: 200px;
+  }
+
+  #about_area {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  #section_info_container {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: white; */
+    padding: 30px;
+    /* bottom: -200px;
+    border-radius: 12px; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* box-shadow: 0 20px 80px 0 rgb(153 153 153 / 30%); */
+  }
+}
+
+/* iphone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+  header h1 {
+    padding: 2px 10px 12px 8px;
+  }
+
+  header {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: black;
+  }
+
+  header ul {
+    visibility: hidden;
+  }
+
+  #banner_area {
+    background-color: white;
+    margin-bottom: 100px;
+  }
+
+  #about_area {
+    padding-top: 40px;
+  }
+
+
+  #section_info_container {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: white; */
+    padding: 20px;
+    /* bottom: -200px;
+    border-radius: 12px; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* box-shadow: 0 20px 80px 0 rgb(153 153 153 / 30%); */
+  }
+}

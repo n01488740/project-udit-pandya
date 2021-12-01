@@ -1,0 +1,15 @@
+Header - 
+font-family : default 
+background-color : linear-gradient(to right, #673ab7 0%, #81d4fa 100%);
+(responsive) font-family : font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",sans-serif;
+(responsive) background-color: black;
+
+Navigation - 
+font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+background-color : linear-gradient(to right, #673ab7 0%, #81d4fa 100%);
+(responsive) background-color: black;
+
+Footer - 
+font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+background-color: black;

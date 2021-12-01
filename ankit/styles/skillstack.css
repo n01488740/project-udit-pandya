@@ -1,0 +1,268 @@
+.skill_info_container {
+  /* height: 100vh; */
+  width: 100%;
+  /* background-color: white; */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+/* .skill_info_container h4 {
+  text-align: center;
+}
+
+.android_skill_container {
+  padding: 5px;
+  margin: 10px 20px 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.android_skill_container #filled {
+  width: 80%;
+} */
+
+/* .skill_info_container h4 {
+  color: #dfdfdf;
+  font-family: "Heebo", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 18px;
+  text-decoration: underline;
+} */
+
+/* .android_skill_text_container {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 20px;
+} */
+
+.skill_banner_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.skill_banner_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  /* height: 450px; */
+  max-width: 270px;
+  padding: 55px 25px 55px 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill_banner_item img {
+  width: 100%;
+  height: auto;
+}
+
+.skill_banner_container h3 {
+  color: #ef5350;
+  margin-top: 30px;
+  font-size: 29px;
+}
+
+.skill_banner_item:hover {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill_banner_container #button_default {
+  margin-top: 40px;
+}
+
+#section_3 img {
+  border-radius: 50%;
+  border-color: #ef5350;
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  height: 80px;
+  width: 80px;
+  margin-top: 20px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.endorsement_item {
+  display: flex;
+  padding: 10px;
+  color: white;
+}
+
+.endorsement_item .sub_section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.endorsement_item h4 {
+  color: #ef5350;
+}
+
+.endorsement_row {
+  display: flex;
+}
+
+#section_3 #section_info_container {
+  flex-direction: column;
+}
+
+#highlighted_endorsement {
+  height: 120px;
+  width: 120px;
+}
+
+.certification_container {
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.certification_container h4 {
+  color: #222;
+  font-family: "Heebo", sans-serif;
+  font-size: 24px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.item_container {
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.certification_container img {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+.item_title_container {
+  display: flex;
+  align-items: center;
+}
+
+.certi_link {
+  color: #0645ad;
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  /* margin-bottom: 18px; */
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 18px;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+#section_info_container h3 {
+  color: white;
+  font-family: "Heebo", sans-serif;
+  font-size: 24px;
+  margin-bottom: 18px;
+  text-transform: uppercase;  
+}
+
+
+/* (#FFA611), University Of Tennessee Orange (#F5820D) and Sunglow (#FFCB2B). */
+/* #temp_item2 {
+  background-color: #f5820d;
+  border-radius: 20px;
+}
+#temp_item3 {
+  border-radius: 20px;
+  background-color: #61dbfb;
+  border-bottom-left-radius: 20px;
+} */
+/* Vivid Gamboge (#FF9900) and Black (#000000). */
+/* #temp_item4 {
+  border-radius: 20px;
+  background-color: #000000;
+  border-bottom-right-radius: 20px;
+} */
+
+/* Laptop */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .skill_info_container {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+    bottom: -200px;
+    /* box-shadow: 0 20px 80px 0 rgb(153 153 153 / 30%); */
+  }
+
+  .skill_info_container h4 {
+    color: #000;
+    font-family: "Heebo", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 18px;
+    text-decoration: underline;
+    visibility: hidden;
+  }
+}
+
+/* iphone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .skill_info_container {
+    flex-direction: column;
+    max-width: 100%;
+    /* padding: 10px; */
+    bottom: -100px;
+  }
+
+  .skill_banner_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+  .skill_banner_item {
+    margin: 15px;
+    width: 100%;
+    padding: 25px 15px 25px 15px;
+  }
+
+  .skill_banner_item img {
+    width: 0px;
+    height: 0px;
+  }
+
+  .endorsement_row {
+    flex-direction: column;
+  }
+
+  .skill_info_container h4 {
+    color: #000;
+    font-family: "Heebo", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 18px;
+    text-decoration: none;
+    padding-left: 30px;
+  }
+}

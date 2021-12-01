@@ -1,0 +1,22 @@
+.progress_br_container {
+    color: #777;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .progressbar {
+    background-color: #DDDDDD;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+  }
+  
+  #filled {
+    background-color: #ef5350;
+    width: 50%;
+    /* Adjust with JavaScript */
+    height: 15px;
+    border-radius: 10px;
+  }
