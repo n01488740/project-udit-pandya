@@ -24,8 +24,40 @@
         </nav>
         <main>
             <h1 class="title">Tech Stack</h1>
-            <div class="box">
-                <div class="card-base">
+            <input type="button" class="add-btn" id="add-skill" onclick="triggerForm()"/>
+            <!-- Skills -->
+            <div class="box" id="ts">
+                <!-- Default Form Visibility : Hidden -->
+                <div class="card-base max-width" id="form-card">
+                    <!-- <img src="../images/contact-form.png" alt="gmail" class="item-one"> -->
+                    <div class="container">
+                        <form>
+                          <label for="title" class="form-label">Title</label>
+                          <label for="title" class="form-label error" id="title_err"></label>
+                          <input type="text" id="title" name="title" placeholder="Title.." onkeydown="clearError()">
+                      
+                          <!-- <label for="lname" class="form-label">Last Name</label>
+                          <label for="lname" class="form-label error" id="lname_err"></label>
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name.." onkeydown="clearError()"> -->
+                      
+                          <label for="category" class="form-label">Category</label>
+                          <select id="category" name="category">
+                            <option value="ts">Tech Stack</option>
+                            <option value="fw">Frameworks</option>
+                            <option value="db">Databases</option>
+                            <option value="pl">Programming Languages</option>
+                          </select>
+                      
+                          <label for="subject" class="form-label">Subject</label>
+                          <label for="subject" class="form-label error" id="subject_err" onkeydown="clearError()"></label>
+                          <textarea id="subject" name="subject" placeholder="Write something.." class="text-area"></textarea>
+                          <input type="button" value="Submit" onclick="addSkill()" class="submit-btn">
+                          <!-- <label for="submit" class="form-label" id="submit_success" class="success" onclick="validateForm()"></label> -->
+                        </form>
+                      </div>
+                </div>
+                <div class="card-base" id="html">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_html" onclick="deleteSkill(id)">
                     <img src="../images/html-5.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>Stands for Hyper Text Markup Language</li>
@@ -35,7 +67,8 @@
                         <li>Tells the browser how to display the content</li>
                     </ul>
                 </div>
-                <div class="card-base">
+                <div class="card-base" id="css">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_css" onclick="deleteSkill(id)">
                     <img src="../images/css.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>Stands for Cascading Style Sheets</li>
@@ -44,7 +77,8 @@
                         <li>External stylesheets are stored in CSS files</li>
                     </ul>
                 </div>
-                <div class="card-base">
+                <div class="card-base" id="js">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_js" onclick="deleteSkill(id)">
                     <img src="../images/javascript.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions</li>
@@ -55,8 +89,9 @@
                 </div>
             </div>
             <h1 class="title">Frameworks</h1>
-            <div class="box">
+            <div class="box" id="fw">
                 <div class="card-base">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_node" onclick="deleteSkill(id)">
                     <img src="../images/nodejs.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>Is an open-source, cross-platform, back-end JavaScript runtime environment.</li>
@@ -66,6 +101,7 @@
                     </ul>
                 </div>
                 <div class="card-base">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_react" onclick="deleteSkill(id)">
                     <img src="../images/react.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>Is a JavaScript library created for building fast and interactive user interfaces for web and mobile applications</li>
@@ -75,6 +111,7 @@
                     </ul>
                 </div>
                 <div class="card-base">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_vue" onclick="deleteSkill(id)">
                     <img src="../images/brands.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>Is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications</li>
@@ -85,8 +122,9 @@
                 </div>
             </div>
             <h1 class="title">Databases</h1>
-            <div class="box">
+            <div class="box" id="db">
                 <div class="card-base">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_sql" onclick="deleteSkill(id)">
                     <img src="../images/sql.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>Stands for Structured Query Language</li>
@@ -96,6 +134,7 @@
                     </ul>
                 </div>
                 <div class="card-base">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_mongo" onclick="deleteSkill(id)">
                     <img src="../images/mongodb.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>MongoDb is a source-available cross-platform document-oriented database program.</li>
@@ -106,8 +145,9 @@
                 </div>
             </div>
             <h1 class="title">Programming Languages</h1>
-            <div class="box">
+            <div class="box" id="pl">
                 <div class="card-base">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_java" onclick="deleteSkill(id)">
                     <img src="../images/java.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>Java is a high-level, class-based, object-oriented programming language</li>
@@ -117,6 +157,7 @@
                     </ul>
                 </div>
                 <div class="card-base">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_py" onclick="deleteSkill(id)">
                     <img src="../images/python.png" alt="Avatar" class="item-one">
                     <ul class="text-align">
                         <li>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics</li>
@@ -152,5 +193,6 @@
                 </div>
             </div>
         </footer>
+        <script src="../controller/skills.js"></script>
     </body>
 </html>

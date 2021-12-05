@@ -8,7 +8,7 @@ function validateForm() {
         document.getElementById('fname').focus();
         return;
     }
-    else if(fname.length < 3 || fname.length > 20) {
+    else if(fname.length < 2 || fname.length > 20) {
         document.getElementById('submit_success').innerHTML = '';
         document.getElementById('fname_err').innerHTML = 'First name should be 2-20 characters long';
         document.getElementById('fname').focus();
@@ -23,7 +23,7 @@ function validateForm() {
         document.getElementById('lname').focus();
         return;
     }
-    else if(lname.length < 3 || lname.length > 20) {
+    else if(lname.length < 2 || lname.length > 20) {
         document.getElementById('submit_success').innerHTML = '';
         document.getElementById('lname_err').innerHTML = 'Last name should be 2-20 characters long';
         document.getElementById('lname').focus();

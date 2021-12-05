@@ -24,3 +24,12 @@ Project task list 7<br>
 
 Project task list 8<br>
 - Layout with  HTML and CSS for your third project feature
+<br>
+
+Project task list 9<br>
+- Fully functional web page with HTML, CSS and JavaScript (1st Feature-Profile)
+<br>
+
+Project task list 10<br>
+- Fully functional web page with HTML, CSS and JavaScript (2nd Feature-Skill Stack)
+<br>
