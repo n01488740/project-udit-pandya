@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+      <head>
+	        <title>SKILLS</title>
+			<meta charset="utf-8"/>
+	        <link type="text/css" rel="stylesheet" href="skill.css">
+
+	  </head>
+	  <body>
+	    <div id="snowspawner"></div>
+	  <header class="header">
+	  <h1>Skills</h1><h2>My Skilks</h2>
+	  <marquee class="text"behavior="scroll" direction="left">“Without sharpen your weapon; standing on the battlefield would not increase your chance of <strong>winning</strong>.”</marquee>
+	  <div class="image"><img src="image1.jpeg" class="ppic"/></div>
+	   <p class="name">VAISHALI SHARMA</p>  
+	   <img src="skills.png" class="one"/>	   <img src="skills.png" class="two"/>
+	  </header>
+	  <main>
+	<div class="content">
+	<p class="ss">Soft Skills</p>
+	<p class="hs">Hard Skills</p>
+    <ul class="soft">
+	<li>Communication skills (both written and oral)</li>
+	<li>Problem-solving</li>
+	<li>Diplomacy</li>
+	<li>Leadership</li>
+	<li>Punctual</li>
+	<li>Takes initiative</li>
+	<li>Handling conflict</li>
+	<li>Friendly</li>
+	<li>Reliable</li>
+	<li>Responsible</li>
+	<li>Organizational skills</li>
+	<li>Flexible</li>
+	</ul>
+	<ul class="hard">
+	<li>Microsoft Excel</li>
+	<li>Research</li>
+	<li>Writing</li>
+	<li>Event promotion</li>
+	<li>Event planning</li>
+	<li>Public speaking</li>
+	<li>Scheduling</li>
+	<li>Project management</li>
+	<li>Data analysis</li>
+	<li>Management experience</li>
+	<li>Microsoft word</li>
+	</ul>
+	<img src="teacher.png" class="tpic" />
+	</div>
+	  </main>
+	  <footer>
+	  <div class="socialsites">
+		<a href="#"><img class="sss" src="fb.png" width="50px"/></a>
+		<a href="#"><img class="sss" src="whatsapp.png" width="50px"/></a>
+		<a href="#"><img class="sss" src="linkedin.png" width="50px"/></a>
+		<a href="#"><img class="sss" src="twitter.png" width="50px"/></a>
+		</div>
+		<p class="last"><b>Vaishali Sharma</b><br> <u>software developer</u><br><i>@2021 MUVA</i></p>
+	  </footer>
+	  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="letItSnow.js" charset="utf-8"></script>
+    <script src="letItSnow.min.js.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function launchSnowflakes() {
+        $('#snowspawner').letItSnow({
+          fall_time:5000
+        });
+      })
+    </script>
+	  <script type="text/javascript">
+	  
+	  $(document).ready(function(){
+  $(".ss").hover(function(){
+    $(".soft").css("background-color", "blue");
+    }, function(){
+    $(this).css("background-color", "blue");
+  });
+  $(".hs").hover(function(){
+    $(".hard").css("background-color", "blue");
+    }, function(){
+    $(this).css("background-color", "blue");
+  });
+
+});
+
+
+                          $('h1').animate({
+	                    	marginLeft: 545,
+                          }, 3000);
+						  $('h2').animate({
+	                    	marginLeft: -320,
+                          }, 4000);
+						  
+							 function blinktext() {
+    $('.ss').fadeOut(500);
+    $('.ss').fadeIn(500);
+}
+setInterval(blinktext, 500);
+					 
+					 function blink_text() {
+    $('.hs').fadeOut(500);
+    $('.hs').fadeIn(500);
+}
+setInterval(blink_text, 500);
+						 
+						 
+	  </script>
+	
+
+	  </body>
+</html>
