@@ -1,6 +1,5 @@
-Created by : Udit Pandya(n01488740)<br>
-Campus - IGS Course<br>
-Web Programming and Design - ITC-5103-IRB<br><br>
+## Project Feature 3
+## Name: Vaishali
+## Student Number: N01495940
 
-Project task list 9(Udit)<br>
-- Fully functional web page with HTML, CSS and JavaScript
+## Learning curve and challenges: I have learnt alot of features and functions of Javascript and CSS3 from the class and online resources like MDN and W3schools. It was really helpful for me to make my web pages functional and well designed.

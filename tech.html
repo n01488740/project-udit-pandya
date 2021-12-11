@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>TECHNICAL-SKILLS</title>
+		<meta charset="utf-8" />
+		<link type="text/css" rel="stylesheet" href="tech-skills.css">
+
+	</head>
+
+	<body>
+		<header>
+			<img src="t-skill.png" class="img" />
+			<h1><u>Technical</u> <u>Skills</u></h1>
+		</header>
+		<main>
+			<ul>
+				<li>
+					<h2>Communication:</h2>
+					<p class="birdman">Strong communication skills are important in nearly every aspect of life,
+						especially in the workforce. This is a universal, important skill that will help you positively
+						interact with your colleagues as you assist and interact with others about technology-related
+						concepts. You may work as a developer, engineer or system administrator in a team of people. IT
+						professionals not only communicate constantly with members of their team, but they also
+						communicate with the other departments of a company and with people outside the company. From
+						staff meetings to one-on-one tech support calls to conversations with your colleagues, there is
+						always an opportunity to communicate. Ensure that you do it well.</p>
+				</li>
+				<li>
+					<h2>Coding:</h2>
+					<p class="birdman">Knowledge of coding is a foundational requirement for most IT professionals.
+						Depending on the position, you'll want to have some basic knowledge of coding languages like
+						HTML and C++. Some positions may require you to know advanced languages like Python, JavaScript,
+						Amazon Web Services (AWS) or possibly TensorFlow. You'll likely get experience with these types
+						of languages through continued education, hands-on experience and training for advanced
+						certifications.</p>
+				</li>
+				<li>
+					<h2>Project management:</h2>
+					<p class="birdman">Having many ongoing projects is typical in the IT department. Being able to
+						manage your workload efficiently will illustrate your ability to multitask in a way that helps
+						you meet deadlines, reach goals and resolve issues. Having solid project management skills
+						appeals to employers in most career fields because it means that time and money are used
+						appropriately.</p>
+				</li>
+				<li>
+					<h2>Leadership:</h2>
+					<p class="birdman">Some people are intimidated by leading when it doesn't come naturally to them.
+						However, don't let your fears discourage you. Leadership can be learned by first helping others
+						who need assistance with a tough concept or duty. Being friendly and willing to help prepares
+						you for bigger tasks like giving a presentation or leading a group discussion. It's all about
+						taking small steps.</p>
+				</li>
+				<li>
+					<h2>Organization:</h2>
+					<p class="birdman">Being organized at work will help you become an efficient employee. Companies
+						hire those who demonstrate great organizational skills because it means they know how to perform
+						their work well and on schedule. Every day at work presents new challenges that will test your
+						ability to manage your workload. If you're organized, you'll positively demonstrate your
+						productivity levels and be known as a valuable employee, which may lead to a raise or promotion
+						in the future.</p>
+				</li>
+				<li>
+					<h2>Troubleshooting:</h2>
+					<p class="birdman">Members of the IT department are known to have strong troubleshooting or
+						problem-solving skills. Whenever people run into tech-related issues that stop them from working
+						or doing the things they love, they'll call tech support if they can't figure it out themselves.
+						You may be working with difficult algorithms that take some time. This is where your technical
+						knowledge and years of hands-on experience will really help you find the solutions you need.</p>
+				</li>
+				<li>
+					<h2>Curiosity:</h2>
+					<p class="birdman">Your desire to learn new things will guide your career to greater levels of
+						success. If you remain curious, you will naturally want to seek the answers to the things you
+						want to know. Curiosity leads you to new discoveries, which educates you further on particular
+						concepts in technology. Once you fully understand how something operates, you can get right to
+						the source of confusion.</p>
+				</li>
+				<li>
+					<h2>Resourcefulness:</h2>
+					<p class="birdman">Knowing what resources you have and how to use them is a great skill to have as
+						an IT professional. You may be limited on budget, time or another element outside of your
+						control. But with the right resources, you can overcome any obstacles preventing you from your
+						project goals. Resourcefulness can enhance not only your work experience but that of your
+						colleagues, as you'll want to share with them what you've learned.</p>
+				</li>
+				<li>
+					<h2>Perseverance:</h2>
+					<p class="birdman">Most people in the workforce need some level of perseverance to be successful at
+						what they do. Without a challenge, there is rarely a change. When the time comes for an
+						interview, you'll want to tell your potential employer that you're not afraid to take on bigger
+						projects or learn new things. When you continue working toward a resolution, you'll find the
+						success that keeps you going.</p>
+				</li>
+			</ul>
+		</main>
+		<a href="" class="scrollup">
+			<img src="up.svg" alt="">
+		</a>
+		<footer>
+			<h3 class="con">In conclusion, I can say that <u>skills</u> are a crucial part of life to achieve success
+			</h3>
+			<p class="muva">@MUVA</p>
+		</footer>
+		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+		<script src="birdman.js"></script>
+		<script type="text/javascript">
+			$('h1').animate({
+				marginLeft: -352,
+			}, 3000);
+			$('.img').animate({
+				marginLeft: 380,
+			}, 3000);
+
+			//scroll up
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 600) {
+					$(".scrollup").fadeIn();
+				} else {
+					$(".scrollup").fadeOut();
+				}
+			})
+
+			$(".scrollup").click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			})
+
+
+			$('.birdman').birdman({ speedUp: false });
+			setTimeout(function () {
+				$('#again').fadeIn();
+				$('#github').fadeIn();
+			}, 3000);
+		</script>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,69 @@
+header{font-size: 30px;
+       position: relative;
+       width: 1181px;
+       margin: 34px auto;
+       height: 128px;
+}
+h1{position: absolute;
+   left: 781px;
+   top: -29px;
+}
+.img{width: 132px;
+     position: absolute;
+     left: -85px;
+     top: -36px;
+}
+main{background-repeat: no-repeat;
+    background-image: url(bulb.png);
+    height: 1458px;
+    
+    width: 1326px;
+    margin: -43px auto;
+    background-size: 100% 87%;    
+	background-color: antiquewhite;
+}
+h2{font-size: 31px;
+    margin-bottom: -12px;
+    background: -webkit-linear-gradient(#000000, #ff00f7ba);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p{        font-size: 21px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#ff0000, #303030);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.con{    padding-top: 11px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.muva{font-size: 36px;
+    font-weight: bold;
+    margin-top: -12px;  background: -webkit-linear-gradient(#2000ff, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+footer{ margin: auto;
+        text-align: center;
+        margin-top: 29px;
+        width: 1326px;
+        height: 100px;
+         background-color: #caefd6;
+}
+body{background-color: azure;
+}
+.scrollup {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #46CFB0;
+    text-align: center;
+    line-height: 60px;
+    padding: 10px;
+    color: #fff;
+    z-index: 100;
+    display: none;
+    border-radius: 50%;
+}
