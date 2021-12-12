@@ -63,7 +63,9 @@
   letter-spacing: 2.1px;
   font-weight: normal;
   margin-bottom: 12px;
+  margin-top: 12px;
   color: #222;
+
 }
 .personal_text h4 {
   font-size: 16px;
@@ -209,26 +211,84 @@
   background-image: url(../images/social-media-icons/social-1_logo-facebook.svg);
 }
 
-footer {
-  background-color: black;
-  width: 100%;
-  position: relative;
-  bottom: 0px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
+
+.action_button_container {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* text-align: center;
-  display: flex;
-  flex: 50%;
-  display: block;
-  text-align: center; */
+  padding: 30px;
 }
 
-footer a {
-  color: aliceblue;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.action_button_container #button_default {
+  width: 100%;
+  padding: 15px;
+  font-size: 22px;
+}
+
+.action_button_container #button_default:hover {
+  box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #ef5350cc;
+}
+
+.overlay_container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000066;
+  overflow: hidden;
+}
+
+.overlay_centered_container {
+  /* max-width: 720px; */
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0px solid #3f51b5;
+  border-radius: 15px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.overlay_centered_container form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay_centered_container input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.form_button_parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.form_error {
+  color: red
 }
 
 /* Laptop */
@@ -267,16 +327,16 @@ footer a {
 
 /* iphone */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  
   #image_area img {
     max-width: 300px;
   }
-  
+
   #initial_info_container {
     flex-direction: column;
-    max-width: 280px;
+    /* max-width: 280px; */
     padding: 30px;
     bottom: -100px;
+    display: flex;
   }
 
   .about_second_row {
@@ -286,15 +346,16 @@ footer a {
   .achievements_container {
     margin-top: 40px;
     margin-bottom: 60px;
+    justify-content:center;
   }
 
   .achievements_container .item {
     padding: 10px 10px;
-    min-width: 180px;
+    min-width: 280px;
     margin: 5px;
   }
 
   .about_info_container .about_second_row p {
-    max-width: 295px;
+    /* max-width: 295px; */
   }
 }

@@ -8,15 +8,37 @@
     <meta name="keywords" content="" />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/main_temp.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link
+    rel="stylesheet"
+    href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link rel="stylesheet" href="styles/profile.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
     />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+  />
+
+    <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
     />
+
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link
@@ -31,23 +53,24 @@
     <header>
       <h1>MUVA</h1>
       <!-- <img src="images/menu/1x/outline_menu_white_24dp.png" alt="Menu" /> -->
-
-      <ul >
-        <li class="element"> <a href="index.html">Home</a></li>
-        <li class="element"><a href="profile.html">Profile</a></li>
-        <li class="element"><a href="skillStack.html">Skill Stack</a></li>
-        <li class="element"><a href="portfolio.html">Portfolio</a></li>
-
-
+      <ul id="navbar">
+        <li>
+          <a href="javascript:void(0);" class="icon" id="menu_icon"
+            ><i class="fa fa-bars"></i
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="skillStack.html">Skill Stack</a></li>
+        <li id="menu_portfolio"><a href="portfolio.html">Portfolio</a></li>
       </ul>
-
     </header>
 
     <div id="banner_area">
       <div id="initial_info_container">
         <div id="image_area">
           <img
-            src="/images/dummy_profile_pic2.jpeg"
+            src="/project-muva/ankit/images/dummy_profile_pic2.jpeg"
             alt=""
           />
         </div>
@@ -76,26 +99,40 @@
               </li>
               <li>
                 <a href="#"
-                  ><i class="lnr lnr-envelope"></i> ankitgiri@thestempedia.com</a
+                  ><i class="lnr lnr-envelope"></i>
+                  ankitgiri@thestempedia.com</a
                 >
               </li>
               <li>
-                <a href="#"
-                  ><i class="lnr lnr-home"></i> Ahmedabad Gujarat</a
-                >
+                <a href="#"><i class="lnr lnr-home"></i> Ahmedabad Gujarat</a>
               </li>
             </ul>
             <ul class="list personal_social">
               <li>
-                <a href="#"><img src="/images/social-media-icons/social-1_logo-slack.svg"></a>
+                <a href="#"
+                  ><img
+                    src="/project-muva/ankit/images/social-media-icons/social-1_logo-slack.svg"
+                /></a>
               </li>
               <li>
-                <a href="#"><img src="/images/social-media-icons/social-1_logo-github.svg"></a>
+                <a href="#"
+                  ><img
+                    src="/project-muva/ankit/images/social-media-icons/social-1_logo-github.svg"
+                /></a>
               </li>
               <li>
-                <a href="#"><img src="/images/social-media-icons/social-1_logo-instagram.svg"></a>
+                <a href="#"
+                  ><img
+                    src="/project-muva/ankit/images/social-media-icons/social-1_logo-instagram.svg"
+                /></a>
               </li>
             </ul>
+
+            <div class="action_button_container">
+              <button class="button_default" onclick="openHireMeForm()">
+                HIRE ME
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -104,6 +141,7 @@
     <div id="about_area">
       <div class="about_info_container">
         <h4>About Myself</h4>
+
         <div class="about_second_row">
           <p>
             "Wait hold on!!! How does this thing work? Let me see what's
@@ -112,32 +150,33 @@
             back in the days for every single appliance that I managed to get my
             hand on. I even had a schedule to repair my broken toys. Well,
             curiosity still gets me into trouble these days. 
-          </br> I like building
+            </br> I like building
             things and discovering new ways to solve problems. I have build
             Karaoke engine for bBoothGo, media utility lib for Blabeey, Custom
             UI elements and animations for Vilo. Integrated mPOS devices and
             credit card readers for PayNPark and SnapCentral. Implemented fully
             automated POC to create HLS(http live streaming) on demand using
             AWS. 
-          </br> I am currently building a telegram bot that can do multiple
+            </br> I am currently building a telegram bot that can do multiple
             things for World of Tanks Blitz players. Its part of my hobby
             projects. 
-          </br> Building robust architecture and seamless user experience
+            </br> Building robust architecture and seamless user experience
             has most of my attention these days. I have also ventured a lot
             toward Android media framework in past. 
-          </br> Working with software
+            </br> Working with software
             engineers who lives by their work and aren't afraid of exploring new
             possibilities is something i always look forward to. 
-          </br> Apart from
+            </br> Apart from
             coding I have thing for capturing moments. It reminds me how awesome
             our world is. I read a lot about space exploration too. 
           </p>
 
           <div class="highlighted_achievement_container">
-            <img src="/images/achievement2.png" alt="" />
+            <img src="/project-muva/ankit/images/achievement2.png" alt="" />
             <h4>NIIT certified</h4>
           </div>
         </div>
+
         <div class="achievements_container">
           <div class="item">
             <i class="lnr lnr-database"></i>
@@ -164,34 +203,92 @@
           </div>
         </div>
       </div>
-
-      <div id="education_area">
-        <!-- <div id="education_info_container">
-          <h1>education</h1>
-          <p>
-            HUmber College - 2021- ongoing Toronto Information technology
-            Solutions
-          </p>
-          <p>
-            Sardar Vallabhbhai Patel Institute of Technology - 2007-2011 BE EC
-          </p>
-          <p>Saraswati Vidhyalaya - 1997-2006 Primary</p>
-        </div> 
-      </div>
-
-      <p>Interests</p>
-      -->
     </div>
 
-    <!-- <main>
+    <!-- <div id="education_area"></div> -->
 
+    <div class="overlay_container">
+      <div class="overlay_centered_container">
+        <form action="action_page.php">
+          <label for="fname">Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
 
+          <label for="lname">Email</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your email.."
+          />
 
-  </main>
- -->
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
 
-    <footer>
+          <label for="subject">Brief Explanation of Role</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            rows="3"
+          ></textarea>
+
+          <span class="form_error"></span>
+
+          <div class="form_button_parent">
+            <input
+              type="button"
+              value="Submit"
+              class="button_default"
+              onclick="submitForm()"
+            />
+
+            <input
+              type="button"
+              id="button_default_grey"
+              value="Cancel"
+              onclick="hideHireMeForm()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- <footer>
       <a>&copy; 2021 MUVA</a>
-    </footer>
+    </footer> -->
+
+    <div class="footer-basic">
+      <!-- <hr class="under_line" /> -->
+      <footer>
+        <div class="social">
+          <a href="#"><i class="icon ion-social-instagram"></i></a
+          ><a href="#"><i class="icon ion-social-snapchat"></i></a
+          ><a href="#"><i class="icon ion-social-twitter"></i></a
+          ><a href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Ankit Gusai © 2021</p>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/project-muva/ankit/js/profile.js"></script>
+    <script src="/project-muva/ankit/js/menuHandler.js"></script>
   </body>
 </html>

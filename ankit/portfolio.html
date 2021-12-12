@@ -8,25 +8,40 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/main_temp.css" />
     <link rel="stylesheet" href="styles/googlePlayButton.css" />
+    <link rel="stylesheet" href="styles/anim.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles/portfolio.css" />
+
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="/js/test.js"></script> -->
   </head>
 
   <body>
     <header>
       <h1>MUVA</h1>
       <!-- <img src="images/menu/1x/outline_menu_white_24dp.png" alt="Menu" /> -->
-
-      <ul>
-        <li class="element"><a href="index.html">Home</a></li>
-        <li class="element"><a href="profile.html">Profile</a></li>
-        <li class="element"><a href="skillStack.html">Skill Stack</a></li>
-        <li class="element"><a href="portfolio.html">Portfolio</a></li>
+      <ul id="navbar">
+        <li>
+          <a href="javascript:void(0);" class="icon" id="menu_icon"
+            ><i class="fa fa-bars"></i
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="skillStack.html">Skill Stack</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
       </ul>
     </header>
     <main>
@@ -47,12 +62,35 @@
             </div>
 
             <div class="feature_item_video_container">
+              <div id="featured_1_slider">
+                <img
+                  id="banner_image"
+                  src="images/career_project_images/dabble_banner.webp"
+                />
+                <img
+                  id="banner_image"
+                  src="images/career_project_images/dabble_slide_1.webp"
+                />
+                <img
+                  id="banner_image"
+                  src="images/career_project_images/dabble_slide_2.webp"
+                />
+                <img
+                  id="banner_image"
+                  src="images/career_project_images/dabble_slide_3.webp"
+                />
+              </div>
+
               <img
-                id="banner_image"
-                src="images/career_project_images/dabble_banner.webp"
+                id="slider_1_play"
+                class="play_icon fade"
+                src="images/social-media-icons/youtube.png"
               />
 
-              <img id="play_icon" src="images/social-media-icons/youtube.png" />
+              <div class="slider_button_container">
+                <a class="prev" onclick="moveSlider1(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlider1(1)">&#10095;</a>
+              </div>
             </div>
 
             <span id="project_description">
@@ -99,7 +137,8 @@
           </div>
 
           <!-- <div class="under_line2" ></div> -->
-          <hr class="under_line2" />
+          <!-- <hr class="under_line2" /> -->
+          <div class="under_line2"></div>
 
           <div class="featured_item">
             <!-- Featured Project 1 -->
@@ -114,12 +153,35 @@
             </div>
 
             <div class="feature_item_video_container">
+              <div id="featured_2_slider">
+                <img
+                  id="banner_image"
+                  src="images/career_project_images/picto_banner.webp"
+                />
+                <img
+                  id="banner_image"
+                  src="images/career_project_images/picto_slide_1.webp"
+                />
+                <img
+                  id="banner_image"
+                  src="images/career_project_images/picto_slide_2.webp"
+                />
+                <img
+                  id="banner_image"
+                  src="images/career_project_images/picto_slide_3.webp"
+                />
+              </div>
+
               <img
-                id="banner_image"
-                src="images/career_project_images/picto_banner.webp"
+                id="slider_2_play"
+                class="play_icon fade"
+                src="images/social-media-icons/youtube.png"
               />
 
-              <img id="play_icon" src="images/social-media-icons/youtube.png" />
+              <div class="slider_button_container">
+                <a class="prev" onclick="moveSlider2(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlider2(1)">&#10095;</a>
+              </div>
             </div>
 
             <span id="project_description">
@@ -181,7 +243,9 @@
 
           <div class="other_project_item_container">
             <div class="other_project_item">
-              <img src="/images/career_project_images/bixy_thumb.webp" />
+              <img
+                src="/project-muva/ankit/images/career_project_images/bixy_thumb.webp"
+              />
               <h2 class="other_project_title">Bixy</h2>
 
               <div class="other_project_rating_container">
@@ -190,12 +254,13 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
                 </div>
               </div>
             </div>
             <div class="other_project_item">
-              <img src="/images/career_project_images/foxy_light.webp" />
+              <img
+                src="/project-muva/ankit/images/career_project_images/foxy_light.webp"
+              />
               <h2 class="other_project_title">Foxy Light</h2>
 
               <div class="other_project_rating_container">
@@ -210,7 +275,9 @@
             </div>
 
             <div class="other_project_item">
-              <img src="/images/career_project_images/dumb_charade.webp" />
+              <img
+                src="/project-muva/ankit/images/career_project_images/dumb_charade.webp"
+              />
               <h2 class="other_project_title">Dyumb Charade</h2>
 
               <div class="other_project_rating_container">
@@ -225,7 +292,9 @@
             </div>
 
             <div class="other_project_item">
-              <img src="/images/career_project_images/office_box.webp" />
+              <img
+                src="/project-muva/ankit/images/career_project_images/office_box.webp"
+              />
               <h2 class="other_project_title">Office Box</h2>
 
               <div class="other_project_rating_container">
@@ -241,17 +310,34 @@
           </div>
         </div>
       </div>
-
-      <div id="section_3">
-        <div id="user_review_container">
-          <p>Review of dabble</p>
-          <p>Review of Pictoblox</p>
-          <p>Review of dabble</p>
-        </div>
-      </div>
     </main>
-    <footer>
+    <!-- <footer>
       <a>&copy; 2021 MUVA</a>
-    </footer>
+    </footer> -->
+
+    <div class="footer-basic">
+      <!-- <hr class="under_line" /> -->
+      <footer>
+        <div class="social">
+          <a href="#"><i class="icon ion-social-instagram"></i></a
+          ><a href="#"><i class="icon ion-social-snapchat"></i></a
+          ><a href="#"><i class="icon ion-social-twitter"></i></a
+          ><a href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Ankit Gusai © 2021</p>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/project-muva/ankit/js/portfolio.js"></script>
+    <script src="/project-muva/ankit/js/menuHandler.js"></script>
   </body>
 </html>

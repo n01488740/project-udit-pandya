@@ -57,7 +57,7 @@
   background-color: #fff;
   border-top-left-radius: 20px;
   /* height: 450px; */
-  max-width: 270px;
+  max-width: 320px;
   padding: 55px 25px 55px 25px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -78,7 +78,7 @@
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.skill_banner_container #button_default {
+.skill_banner_container .button_default {
   margin-top: 40px;
 }
 
@@ -180,9 +180,24 @@
   font-family: "Heebo", sans-serif;
   font-size: 24px;
   margin-bottom: 18px;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
+
+.dynamic_data_container{
+  display: flex;
+  padding: 30px;
+  width: 100%;
+}
+
+.dynamic_loading_message_container {
+  display: flex;
+  padding: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
 
 /* (#FFA611), University Of Tennessee Orange (#F5820D) and Sunglow (#FFCB2B). */
 /* #temp_item2 {

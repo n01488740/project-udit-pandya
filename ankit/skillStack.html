@@ -9,9 +9,26 @@
     <link rel="stylesheet" href="styles/skillstack.css" />
     <link rel="stylesheet" href="styles/main_temp.css" />
     <link rel="stylesheet" href="styles/progress.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="/js/test.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+
   </head>
 
   <body>
@@ -19,21 +36,27 @@
       <h1>MUVA</h1>
       <!-- <img src="images/menu/1x/outline_menu_white_24dp.png" alt="Menu" /> -->
 
-      <ul>
-        <li class="element"><a href="index.html">Home</a></li>
-        <li class="element"><a href="profile.html">Profile</a></li>
-        <li class="element"><a href="skillStack.html">Skill Stack</a></li>
-        <li class="element"><a href="portfolio.html">Portfolio</a></li>
+      <ul id="navbar">
+        <li>
+          <a href="javascript:void(0);" class="icon" id="menu_icon"
+            ><i class="fa fa-bars"></i
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="skillStack.html">Skill Stack</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
       </ul>
+
     </header>
     <main>
       <div id="banner_area">
         <div class="skill_info_container">
-          <h4>Technical Skills</h4>
+          <!-- <h4>Technical Skills</h4> -->
 
           <div class="skill_banner_container">
             <div class="skill_banner_item">
-              <img src="/images/info_graph_android2.png" />
+              <img src="/project-muva/ankit/images/info_graph_android2.png" />
               <h3>Android</h3>
 
               <div class="bullet_container">
@@ -46,11 +69,11 @@
                 <span id="bullet">Bleutoth Stack</span>
               </div>
 
-              <button id="button_default">KNOW MORE</button>
+              <button class="button_default">KNOW MORE</button>
             </div>
 
             <div class="skill_banner_item">
-              <img src="/images/info_graph_cloud.png" />
+              <img src="/project-muva/ankit/images/info_graph_cloud.png" />
               <h3>Firebase</h3>
 
               <div class="bullet_container">
@@ -63,11 +86,13 @@
                 <span id="bullet">Dynamic Links</span>
               </div>
 
-              <button id="button_default">KNOW MORE</button>
+              <button class="button_default">KNOW MORE</button>
             </div>
 
             <div class="skill_banner_item">
-              <img src="/images/info_graph_cross_platform.jpg" />
+              <img
+                src="/project-muva/ankit/images/info_graph_cross_platform.jpg"
+              />
               <h3>React Native</h3>
 
               <div class="bullet_container">
@@ -78,7 +103,7 @@
                 <span id="bullet">JavaScript</span>
               </div>
 
-              <button id="button_default">KNOW MORE</button>
+              <button class="button_default">KNOW MORE</button>
             </div>
           </div>
         </div>
@@ -145,7 +170,7 @@
               <h3>Oracle Certified</h3>
 
               <img
-                src="/images/oracle_certificate.png"
+                src="/project-muva/ankit/images/oracle_certificate.png"
                 width="50"
                 height="50"
                 alt
@@ -168,7 +193,12 @@
             <div class="item_title_container">
               <h3>STEM Education Initiator</h3>
 
-              <img src="/images/stem.png" width="50" height="50" alt />
+              <img
+                src="/project-muva/ankit/images/stem.png"
+                width="50"
+                height="50"
+                alt
+              />
             </div>
 
             <p>
@@ -185,7 +215,12 @@
             <div class="item_title_container">
               <h3>NIIT Top 10%</h3>
 
-              <img src="/images/niit_top_10.png" width="50" height="50" alt />
+              <img
+                src="/project-muva/ankit/images/niit_top_10.png"
+                width="50"
+                height="50"
+                alt
+              />
             </div>
 
             <p>
@@ -201,12 +236,12 @@
         </div>
       </div>
 
-      <div id="section_3">
+      <!-- <div id="section_3">
         <div id="section_info_container">
           <h3>Skills Endorsements</h3>
           <div class="endorsement_row">
             <div class="endorsement_item">
-              <img src="images/random_1.jpeg" />
+              <img src="/project-muva/ankit/images/random_1.jpeg" />
               <div class="sub_section">
                 <p>
                   “[Product name] had a great [product advantage]. I was a bit
@@ -218,7 +253,7 @@
             </div>
 
             <div class="endorsement_item">
-              <img src="images/radom_person_2.jpeg" />
+              <img src="/project-muva/ankit/images/radom_person_2.jpeg" />
               <div class="sub_section">
                 <p>
                   “[Product name] had a great [product advantage]. I was a bit
@@ -232,7 +267,7 @@
 
           <div class="endorsement_row">
             <div class="endorsement_item">
-              <img src="images/radom_person_3.png" />
+              <img src="/project-muva/ankit/images/radom_person_3.png" />
               <div class="sub_section">
                 <p>
                   “[Product name] had a great [product advantage]. I was a bit
@@ -244,7 +279,7 @@
             </div>
 
             <div class="endorsement_item">
-              <img src="images/random_1.jpeg" />
+              <img src="/project-muva/ankit/images/random_1.jpeg" />
               <div class="sub_section">
                 <p>
                   “[Product name] had a great [product advantage]. I was a bit
@@ -258,7 +293,7 @@
 
           <div class="endorsement_row">
             <div class="endorsement_item">
-              <img src="images/radom_person_2.jpeg" />
+              <img src="/project-muva/ankit/images/radom_person_2.jpeg" />
               <div class="sub_section">
                 <p>
                   “[Product name] had a great [product advantage]. I was a bit
@@ -270,7 +305,7 @@
             </div>
 
             <div class="endorsement_item">
-              <img src="images/radom_person_3.png" />
+              <img src="/project-muva/ankit/images/radom_person_3.png" />
               <div class="sub_section">
                 <p>
                   “[Product name] had a great [product advantage]. I was a bit
@@ -284,7 +319,10 @@
 
           <div class="endorsement_row">
             <div class="endorsement_item">
-              <img id="highlighted_endorsement" src="images/random_1.jpeg" />
+              <img
+                id="highlighted_endorsement"
+                src="/project-muva/ankit/images/random_1.jpeg"
+              />
               <div class="sub_section">
                 <p>
                   “[Product name] had a great [product advantage]. I was a bit
@@ -295,17 +333,52 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <!-- <p>Endorsements</p>
+      <!-- <p>Endorsements</p>
 
           Skill Set Andorid firebase React native Figma and Gimp offering to my
           clients - Design, build and deploys apps - Perfromance monitering -
           cross-platform support Endorsements -->
+      <!-- </div> -->
+
+      <div id="section_3">
+        <div id="section_info_container">
+          <div class="dynamic_loading_message_container">
+            <p id="loading_message">Loading data...</p>
+            <button id="load_button" class="button_default">
+              Load Latest Endorsements
+            </button>
+          </div>
+        </div>
       </div>
     </main>
-    <footer>
+    <!-- <footer>
       <a>&copy; 2021 MUVA</a>
-    </footer>
+    </footer> -->
+    <div class="footer-basic">
+      <!-- <hr class="under_line" /> -->
+      <footer>
+        <div class="social">
+          <a href="#"><i class="icon ion-social-instagram"></i></a
+          ><a href="#"><i class="icon ion-social-snapchat"></i></a
+          ><a href="#"><i class="icon ion-social-twitter"></i></a
+          ><a href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Ankit Gusai © 2021</p>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/project-muva/ankit/js/skillstack.js"></script>
+    <script src="/project-muva/ankit/js/menuHandler.js"></script>
   </body>
 </html>
