@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.link_container {
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  font-size: 85px;
+  color: #323232;
+  text-align: center;
+  padding: 10px;
+}
