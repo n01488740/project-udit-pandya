@@ -43,6 +43,9 @@ function addSkill() {
     let category = document.getElementById('category').value;
     
     let div = '';
+    div+="<img src=\"../images/delete.png\" alt=\"edit\" class=\"delete-icon\""
+    div+="id=\"del_\""
+    div+="del_" + title + "\" onclick=\"deleteSkill(id)\"></img>";
     div+="<h2 id=\"";
     div+="new-title" + x + "\">";
     div+="</h2>"

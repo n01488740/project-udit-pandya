@@ -90,7 +90,6 @@ footer a {
         background-position: right;
         margin-right: 15px;
         align-content: center;
-        background-image: url("../images/menu/1x/outline_menu_white_24dp.png");
     }
 
     .footer-btn:hover {
@@ -246,6 +245,12 @@ footer a {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+/* On mouse-over, add a deeper shadow and show delete icon */
+.card-base:hover > .delete-icon {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    visibility: visible;
+}
+
 .title {
     color: aliceblue;
     font-family: 'Comfortaa';
@@ -332,4 +337,108 @@ footer a {
 
 .flex-grow {
     flex-grow: 1;
+}
+
+/************************ JS embeddded UI Code ********************/
+/* Add Button */
+.add-btn {
+    display: flex;
+    justify-content: center;
+    transition: transform .2s;
+    background-color:transparent;
+    border: 2px solid white;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    padding: 10px;  
+    font-size: 15px;
+    height: auto;
+    width: 100px;
+    align-self: center;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.add-btn:hover {
+    transform: scale(1.2);
+}
+
+/* iphone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+    .add-btn {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Contact Form Style */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    width: 50%;
+    border-radius: 5px;
+    background-color:transparent;
+    padding: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form label */
+.form-label{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-area {
+    height:200px;
+}
+
+/* Submit Button Style */
+.submit-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #673ab7;
+}
+
+/* Error styling */
+.error {
+    color: black;
+}
+
+.success {
+    color: greenyellow;
+}
+
+.max-width {
+    width: 100%;
+    height: 0px;
+}
+
+/************* Delete button styling **********************/
+/* Delete Button */
+.delete-icon {
+    transition: transform .2s;
+    visibility: hidden;   
+    background-color: transparent;
 }

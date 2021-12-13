@@ -11,7 +11,7 @@
         <header>
             <h1>MUVA</h1>
             <img
-              src="images/menu/1x/outline_menu_white_24dp.png"
+              src="../images/menu/2x/outline_menu_white_24dp.png"
               alt="Menu"
             />
         </header>
@@ -23,10 +23,44 @@
             <a href="">Porfolio</a>
         </nav>
         <main>
-            <!-- Certifications -->
             <h1 class="title">Certifications</h1>
-            <div class="box">
-                <div class="card-base">
+            <input type="button" class="add-btn" id="add-certificate" onclick="triggerCertificateForm()"/>
+            <!-- Certifications -->
+            <div class="box" id="cr">
+                <!-- Default Form Visibility : Hidden -->
+                <div class="card-base max-width" id="form-card-certi">
+                    <!-- <img src="../images/contact-form.png" alt="gmail" class="item-one"> -->
+                    <div class="container">
+                        <form>
+                          <label for="title" class="form-label">Title</label>
+                          <label for="title" class="form-label error" id="title_err"></label>
+                          <input type="text" id="title" name="title" placeholder="Title.." onkeydown="clearCertificationError()">
+
+                          <!-- <label for="designation" class="form-label">Designation</label>
+                          <label for="designation" class="form-label error" id="designation_err"></label>
+                          <input type="text" id="designation" name="designation" placeholder="Designation.." onkeydown="clearError()"> -->
+                      
+                          <!-- <label for="lname" class="form-label">Last Name</label>
+                          <label for="lname" class="form-label error" id="lname_err"></label>
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name.." onkeydown="clearError()"> -->
+                      
+                          <label for="category" class="form-label">Category</label>
+                          <select id="category" name="category" onchange="onSelect()">
+                            <option value="cr">Certificates</option>
+                            <!-- <option value="ex">Experience</option>
+                            <option value="pr">Projects</option> -->
+                          </select>
+                      
+                          <label for="subject" class="form-label">Subject</label>
+                          <label for="subject" class="form-label error" id="subject_err"></label>
+                          <textarea id="subject" name="subject" placeholder="Write something.." class="text-area" onkeydown="clearCertificationError()"></textarea>
+                          <input type="button" value="Submit" onclick="addCertification()" class="submit-btn">
+                          <!-- <label for="submit" class="form-label" id="submit_success" class="success" onclick="validateForm()"></label> -->
+                        </form>
+                      </div>
+                </div>
+                <div class="card-base" id="android">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_an" onclick="deleteSkill(id)">
                     <img src="../images/android.JPG" alt="Avatar" class="item-one image-resize">
                     <ul class="text-align">
                         <li>Android is a mobile operating system based on a modified version of the Linux kernel and other open source software</li>
@@ -36,7 +70,8 @@
                         <li>Android applications were usually developed in Java Language but now, Kotlin is the preferred Language for building Android Apps.</li>
                     </ul>
                 </div>
-                <div class="card-base">
+                <div class="card-base" id="web">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_web" onclick="deleteSkill(id)">
                     <img src="../images/web.JPG" alt="Avatar" class="item-one image-resize">
                     <ul class="text-align">
                         <li>Web development refers to the building, creating, and maintaining of websites.</li>
@@ -49,8 +84,44 @@
             </div>
             <!-- Experience -->
             <h1 class="title">Experience</h1>
-            <div class="box">
-                <div class="card-base">
+            <input type="button" class="add-btn" id="add-exp" onclick="triggerExpForm()"/>
+            <div class="box" id="ex">
+                <!-- Default Form Visibility : Hidden -->
+                <div class="card-base max-width" id="form-card-exp">
+                    <!-- <img src="../images/contact-form.png" alt="gmail" class="item-one"> -->
+                    <div class="container">
+                        <form>
+
+                          <label for="designation" class="form-label">Designation</label>
+                          <label for="designation" class="form-label error" id="designation_err"></label>
+                          <input type="text" id="designation" name="designation" placeholder="Designation.." onkeydown="clearExperienceError()">
+
+                          <label for="duration" class="form-label">Duration</label>
+                          <label for="duration" class="form-label error" id="duration_err"></label>
+                          <input type="text" id="start-duration" name="duration" placeholder="Start Duration.." onkeydown="clearExperienceError()">
+                          <input type="text" id="end-duration" name="duration" placeholder="End Duration.." onkeydown="clearExperienceError()">
+                      
+                          <!-- <label for="lname" class="form-label">Last Name</label>
+                          <label for="lname" class="form-label error" id="lname_err"></label>
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name.." onkeydown="clearError()"> -->
+                      
+                          <label for="category" class="form-label">Category</label>
+                          <select id="category-exp" name="category" onchange="onSelect()">
+                            <!-- <option value="cr">Certificates</option> -->
+                            <option value="ex">Experience</option>
+                            <!-- <option value="pr">Projects</option> -->
+                          </select>
+                      
+                          <label for="subject" class="form-label">Subject</label>
+                          <label for="subject" class="form-label error" id="subject_exp_err" ></label>
+                          <textarea id="subject-exp" name="subject" placeholder="Write something.." class="text-area" onkeydown="clearExperienceError()"></textarea>
+                          <input type="button" value="Submit" onclick="addExperience()" class="submit-btn">
+                          <!-- <label for="submit" class="form-label" id="submit_success" class="success" onclick="validateForm()"></label> -->
+                        </form>
+                      </div>
+                </div>
+                <div class="card-base" id="netflix">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_net" onclick="deleteSkill(id)">
                     <img src="../images/netflix.png" alt="Avatar" class="item-one image-resize">
                     <h3 class="heading">Designation : Android Developer</h3>
                     <h3 class="heading">Duration : 2014 - 2016 (3years) </h3>
@@ -63,7 +134,8 @@
                         <li>Working with offline storage, threading, and performance tuning</li>
                     </ul>
                 </div>
-                <div class="card-base">
+                <div class="card-base" id="hbo">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_hbo" onclick="deleteSkill(id)">
                     <img src="../images/hbo.png" alt="Avatar" class="item-one">
                     <h3 class="heading">Designation : Full Stack Developer</h3>
                     <h3 class="heading">Duration : 2017 - 2020 (4years)</h3>
@@ -78,7 +150,8 @@
                         <li>Write technical documentation.</li>
                     </ul>
                 </div>
-                <div class="card-base">
+                <div class="card-base" id="paypal">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_pay" onclick="deleteSkill(id)">
                     <img src="../images/paypal.png" alt="Avatar" class="item-one">
                     <h3 class="heading">Designation : Java Developer</h3>
                     <h3 class="heading">Duration : 2020 - Present </h3>
@@ -94,8 +167,46 @@
             </div>
             <!-- Projects -->
             <h1 class="title">Projects</h1>
-            <div class="box">
-                <div class="card-base">
+            <input type="button" class="add-btn" id="add-project" onclick="triggerProjectForm()"/>
+            <div class="box" id="pr">
+                <!-- Default Form Visibility : Hidden -->
+                <div class="card-base max-width" id="form-card-pro">
+                    <!-- <img src="../images/contact-form.png" alt="gmail" class="item-one"> -->
+                    <div class="container">
+                        <form>
+                          <label for="title" class="form-label">Title</label>
+                          <label for="title" class="form-label error" id="title_pro_err"></label>
+                          <input type="text" id="title-project" name="title" placeholder="Title.." onkeydown="clearProjectError()">
+
+                          <label for="description" class="form-label">Description</label>
+                          <label for="description" class="form-label error" id="description_err"></label>
+                          <input type="text" id="description" name="description" placeholder="Description.." onkeydown="clearProjectError()">
+
+                          <label for="url" class="form-label">Project Link</label>
+                          <label for="url" class="form-label error" id="url_err"></label>
+                          <input type="text" id="url" name="url" placeholder="Project Link.." onkeydown="clearProjectError()">
+                      
+                          <!-- <label for="lname" class="form-label">Last Name</label>
+                          <label for="lname" class="form-label error" id="lname_err"></label>
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name.." onkeydown="clearError()"> -->
+                      
+                          <label for="category" class="form-label">Category</label>
+                          <select id="category-pro" name="category" onchange="onSelect()">
+                            <!-- <option value="cr">Certificates</option>
+                            <option value="ex">Experience</option> -->
+                            <option value="pr">Projects</option>
+                          </select>
+                      
+                          <label for="subject" class="form-label">Subject</label>
+                          <label for="subject" class="form-label error" id="subject_pro_err" onkeydown="clearProjectError()"></label>
+                          <textarea id="subject_pro" name="subject" placeholder="Write something.." class="text-area"></textarea>
+                          <input type="button" value="Submit" onclick="addProject()" class="submit-btn">
+                          <!-- <label for="submit" class="form-label" id="submit_success" class="success" onclick="validateForm()"></label> -->
+                        </form>
+                      </div>
+                </div>
+                <div class="card-base" id="aof">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_aof" onclick="deleteSkill(id)">
                     <img src="../images/aof.jpg" alt="Avatar" class="item-one">
                     <h3><a class="heading link" href="https://play.google.com/store/apps/details?id=com.aof.artofiesta" target="_blank">Art 'O' Fiesta</a></h3>
                     <h3 class="heading">An e-commerce applications where in users can buy special hand-made gifts for their loved ones.</h3>
@@ -111,7 +222,8 @@
                         <li>AWS Server for hosting</li>
                     </ul>
                 </div>
-                <div class="card-base">
+                <div class="card-base" id="pbd">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_pdb" onclick="deleteSkill(id)">
                     <img src="../images/prarthana.jpg" alt="Avatar" class="item-one">
                     <h3><a class="heading link" href="https://play.google.com/store/apps/details?id=com.adriit.prarthana" target="_blank">Prarthana Blood Donation</a></h3>
                     <h3 class="heading">A platform where users can donate as blood as request for blood. App also comes with a feature to set priority.</h3>
@@ -126,7 +238,8 @@
                         <li>AWS Server for hosting</li>
                     </ul>
                 </div>
-                <div class="card-base">
+                <div class="card-base" id="wt">
+                    <img src="../images/delete.png" alt="edit" class="delete-icon" id="del_wt" onclick="deleteSkill(id)">
                     <img src="../images/wisetoss.png" alt="Avatar" class="item-one">
                     <h3><a class="heading link" href="https://play.google.com/store/apps/details?id=com.wisetoss.recyclingcenter" target="_blank">WiseToss</a></h3>
                     <h3 class="heading">A platform where users can recycle different materials and avail numerous coupons in return. A unique idea through which people can contribute towards the well being of the environment.</h3>
@@ -169,5 +282,6 @@
                 </div>
             </div>
         </footer>
+        <script src="../controller/portfolio.js"></script>
     </body>
 </html>
